@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingTop="24dp"
+    android:background="@color/textBackgroundButtonNews"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/id_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|snap">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/id_img_title_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/logo"
+                    app:layout_collapseMode="parallax" />
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:visibility="visible"
+                        android:id="@+id/id_radio_group_bus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:checked="true"
+                            android:padding="12dp"
+                            app:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:text="Міські автобуси"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_radio_btn_city" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            app:buttonTint="@android:color/white"
+                            android:padding="12dp"
+                            android:textColor="@android:color/white"
+                            android:text="Приміські автобуси"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_radio_btn_out_city" />
+
+
+
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:id="@+id/id_radio_btn_smila_cherkassy"
+                            android:padding="12dp"
+                            app:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:text="Сміла - Черкаси"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:padding="12dp"
+                            app:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:text="Черкаси - Сміла"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_radio_btn_cherkassy_smila" />
+
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:visibility="gone"
+                        android:id="@+id/id_radio_group_train"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:padding="12dp"
+                            app:buttonTint="@android:color/white"
+                            android:textColor="@android:color/white"
+                            android:text="Сміла - Черкаси"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_radio_btn_train_smila_cherkassy" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            app:buttonTint="@android:color/white"
+                            android:padding="12dp"
+                            android:textColor="@android:color/white"
+                            android:text="Черкаси - Сміла"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/id_radio_btn_train_cherkassy_smila" />
+
+                        <ProgressBar
+                            android:layout_gravity="center"
+                            android:padding="20dp"
+                            android:visibility="invisible"
+                            android:id="@+id/id_progress_bar_transport"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <ImageView
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+        <android.support.design.widget.TabLayout
+            app:tabTextAppearance="@style/CustomToolbarStyle"
+            android:id="@+id/id_tabs"
+            android:background="@color/textBackgroundButtonNews"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            app:tabIndicatorColor="?android:attr/textColorPrimaryInverse"
+            app:tabIndicatorHeight="4dp"
+            app:tabSelectedTextColor="?android:attr/textColorPrimaryInverse" />
+
+        <ImageView
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/id_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

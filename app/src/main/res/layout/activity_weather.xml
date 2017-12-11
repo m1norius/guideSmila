@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="24dp"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/id_progress_bar_weather"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/id_progress_bar_weather"
+        android:background="@android:color/black"
+        android:id="@+id/id_recycler_weather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

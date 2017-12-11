@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Smila Guide</string>
+    <string name="key_weather">1334f9d3a06a2c146e73a4d3a4830a3d</string>
+    <string name="smila">Сміла</string>
+    <string name="cherkassy">Черкаси</string>
+    <string name="world">Світ</string>
+    <string name="ukraine">Україна</string>
+    <string name="notification">Сповіщення</string>
+    <string name="you_must_login">Для створення повідомлення потрібно зареєструватись</string>
+    <string name="buy_topic_pc">Комп\'ютери, мультимедія…</string>
+    <string name="buy_topic_phone">Телефони</string>
+    <string name="buy_topic_animals">Домашні тварии, рослини…</string>
+    <string name="buy_topic_clothes">Одяг</string>
+    <string name="buy_topic_auto">Авто/мото/вело</string>
+    <string name="other">Інше</string>
+    <string name="choice_topic">Оберіть розділ</string>
+    <string name="uah">грн</string>
+    <string name="txt_hint_price">Вартість</string>
+    <string name="txt_hint_description">Опис товару та контактні данні</string>
+    <string name="txt_hint_title">Загаловок повідомлення</string>
+    <string name="ip">Вкажіть IP адресу</string>
+
+    <string-array name="buy_topic">
+        <item>Комп\'ютери, мультимедія…</item>
+        <item tag="phone">Телефони</item>
+        <item>Домашні тварии, рослини…</item>
+        <item>Одяг</item>
+        <item>Авто/мото/вело</item>
+        <item>Інше</item>
+    </string-array>
+
+    <string-array name="buy_topic_convert">
+        <item>pc</item>
+        <item>phone</item>
+        <item>animals</item>
+        <item>clothes</item>
+        <item>auto</item>
+        <item>other</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "846554480681",
+    "firebase_url": "https://smilaguide.firebaseio.com",
+    "project_id": "smilaguide",
+    "storage_bucket": "smilaguide.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846554480681:android:f286f891efef8b61",
+        "android_client_info": {
+          "package_name": "com.minorius.smilaguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846554480681-lduddmupltn5ff35fgkoka09b9v8uvfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.minorius.smilaguide",
+            "certificate_hash": "08686fc32f48d81bad32c817bf57ccdcd051e32e"
+          }
+        },
+        {
+          "client_id": "846554480681-040e48jbir1349dd9sn0e6bbbl0t1fer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvpootAgCvb-tFwiZehmch3dV7LggL37Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846554480681-040e48jbir1349dd9sn0e6bbbl0t1fer.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

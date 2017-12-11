@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:layout_margin="16dp"
+        android:textSize="20sp"
+        tools:text="Title"
+        android:id="@+id/id_txt_buy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/black"
+        tools:text="Description"
+        android:id="@+id/id_txt_buy_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_txt_buy_title"
+        android:layout_alignLeft="@+id/id_txt_buy_title"
+        android:layout_alignStart="@+id/id_txt_buy_title" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        tools:text="Date"
+        android:id="@+id/id_txt_buy_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/id_txt_buy_price"
+        android:layout_alignLeft="@+id/id_txt_buy_description"
+        android:layout_alignStart="@+id/id_txt_buy_description"
+        android:layout_alignBottom="@+id/id_txt_buy_price" />
+
+    <TextView
+        android:textSize="24sp"
+        tools:text="Price"
+        android:id="@+id/id_txt_buy_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="24sp"
+        android:text="@string/uah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_txt_buy_description"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView3" />
+
+
+
+</RelativeLayout>

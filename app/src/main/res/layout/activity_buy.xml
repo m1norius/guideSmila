@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textBackgroundButtonNews"
+    android:paddingTop="24dp">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:background="@android:color/white"
+            android:id="@+id/id_collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|snap">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/id_card_buy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_margin="2dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shape_buy_btn"
+                        android:src="@drawable/btn_offer"
+                        android:id="@+id/id_button_buy_create"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <RadioGroup
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_card_buy"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/id_radio_group_buy">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="pc"
+                        android:checked="true"
+                        android:id="@+id/id_check_box_buy_pc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_topic_pc"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="phone"
+                        android:id="@+id/id_check_box_buy_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_topic_phone"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="animals"
+                        android:id="@+id/id_check_box_buy_animals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_topic_animals"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="clothes"
+                        android:id="@+id/id_check_box_buy_cloth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_topic_clothes"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="auto"
+                        android:id="@+id/id_check_box_buy_auto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_topic_auto"
+                        android:textColor="@android:color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        app:buttonTint="@color/textBackgroundButtonNews"
+                        android:tag="other"
+                        android:id="@+id/id_check_box_buy_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other"
+                        android:textColor="@android:color/black" />
+
+                </RadioGroup>
+
+                <ProgressBar
+                    android:visibility="invisible"
+                    android:id="@+id/id_progress_bar_buy"
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/id_radio_group_buy"
+                    android:layout_alignRight="@+id/id_card_buy"
+                    android:layout_alignEnd="@+id/id_card_buy" />
+
+                <ImageView
+                    android:background="@color/colorBuyLine"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp" />
+
+            </RelativeLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="4dp"
+        android:id="@+id/id_recycler_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.design.widget.CoordinatorLayout>

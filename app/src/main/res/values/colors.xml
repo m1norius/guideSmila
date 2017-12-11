@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backGroundWeatherItem">#e6e6ff</color>
+    <color name="textColorNews">#B7B0A8</color>
+    <color name="textBackgroundButtonNews">#1b3d4f</color>
+    <color name="colorFromBackgroundLight">#ab7a48</color>
+    <color name="colorCheckBox">#74d6d9</color>
+    <color name="colorExtraBus">#74d7dc</color>
+    <color name="colorExtraBusLine">#7C3926</color>
+    <color name="colorBuy">#ced3d6</color>
+    <color name="colorBuyLine">#7C5526</color>
+
+
+
+    <string name="red">#FF0000</string>
+    <string name="yellow">#FFFF00</string>
+    <string name="blue">#00BFFF</string>
+    <string name="green">#00FF00</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="@string/choice_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_marginTop="16dp"
+        android:id="@+id/id_spinner_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_spinner_buy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:maxLength="500"
+                android:layout_marginTop="20dp"
+                android:hint="@string/txt_hint_title"
+                android:id="@+id/id_edit_text_buy_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:maxLength="800"
+                android:layout_marginTop="8dp"
+                android:hint="@string/txt_hint_description"
+                android:id="@+id/id_edit_text_buy_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_edit_text_buy_title"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:maxLength="10"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:layout_below="@+id/id_edit_text_buy_description"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:hint="@string/txt_hint_price"
+                android:id="@+id/id_edit_text_buy_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/textView2"
+                android:layout_toStartOf="@+id/textView2" />
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/id_edit_text_buy_description"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/uah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+
+            <ImageButton
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:src="@drawable/buy_submit"
+                android:background="@drawable/shape_background_register"
+                android:text="Зареєструвати"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_btn_buy_register"
+                android:layout_below="@+id/id_edit_text_buy_price"
+                android:layout_centerHorizontal="true" />
+
+            <ProgressBar
+                android:id="@+id/id_progress_bar_create_offer"
+                android:visibility="invisible"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/id_btn_buy_register"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

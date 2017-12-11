@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:paddingTop="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.minorius.smilaguide.MainActivity">
+
+    <EditText
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:layout_marginTop="4dp"
+        android:hint="@string/ip"
+        android:id="@+id/id_edit_text_main_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/id_btn_main_apply"
+        android:layout_toStartOf="@+id/id_btn_main_apply" />
+
+    <Button
+        android:layout_alignParentTop="true"
+        android:id="@+id/id_btn_main_apply"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:text="Apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/id_btn_main_apply"
+        android:id="@+id/id_recycler_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
